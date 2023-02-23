@@ -2,13 +2,13 @@
 
 import itunespy
 import re
-from ytmdl.stringutils import (
+from youtmdl.stringutils import (
     remove_multiple_spaces, remove_punct, compute_jaccard, remove_stopwords,
     check_keywords
 )
-from ytmdl import defaults
+from youtmdl import defaults
 from simber import Logger
-from ytmdl.meta import (
+from youtmdl.meta import (
     gaana, deezer, saavn, lastfm, musicbrainz, spotify,
     preconfig
 )
