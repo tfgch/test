@@ -6,7 +6,7 @@ import shutil
 from html import unescape
 from re import sub
 
-from ytmdl import defaults
+from youtmdl import defaults
 from simber import Logger
 
 logger = Logger("Dir")
