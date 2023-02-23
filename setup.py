@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Setup ytmdl."""
+"""Setup youtmdl."""
 
 import setuptools
 from os import path
@@ -8,10 +8,10 @@ from warnings import warn
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-exec(open("ytmdl/__version__.py").read())
+exec(open("youtmdl/__version__.py").read())
 
 req_pkgs = [
-    'yt-dlp==2023.02.23.43044',
+    'yt-dlp==2023.02.17',
     'mutagen',
     'itunespy',
     'requests',
@@ -41,7 +41,7 @@ extra_features = {
 # Add the distributable files
 file_map = [
     ('/etc/bash_completion.d', 'ytmdl.bash'),
-    ('/usr/share/zsh/functions/Completion/Unix', 'ytmdl.zsh')
+    ('/usr/share/zsh/functions/Completion/Unix', 'youtmdl.zsh')
 ]
 
 data_files = []
@@ -58,14 +58,14 @@ params = {
 
 if __name__ == '__main__':
     setuptools.setup(
-        name="ytmdl",
+        name="youtmdl",
         version=__version__,
         author="Deepjyoti Barman",
         author_email="deep.barma30@gmail.com",
         description="Youtube Music Downloader",
         long_description=long_description,
         long_description_content_type="text/markdown",
-        url="https://github.com/deepjyoti30/ytmdl",
+        url="https://github.com/deepjyoti30/youtmdl",
         packages=setuptools.find_packages(),
         classifiers=(
             "Programming Language :: Python :: 3",
@@ -81,7 +81,7 @@ if __name__ == '__main__':
         extras_require=extra_features,
         entry_points={
             'console_scripts': [
-                "ytmdl = ytmdl:entry"
+                "youtmdl = youtmdl:entry"
             ]
         },
         **params
