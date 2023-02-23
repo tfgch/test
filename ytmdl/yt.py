@@ -7,16 +7,16 @@ from urllib.parse import urlparse, parse_qs
 import yt_dlp
 from yt_dlp.utils import DownloadError
 from re import match
-from ytmdl import defaults, utility, stringutils
+from youtmdl import defaults, utility, stringutils
 from downloader_cli.download import Download
 import traceback
 from sys import stdout
 from simber import Logger
-from ytmdl.exceptions import ExtractError
-from ytmdl.utils.ytmusic import get_title_from_ytmusic
+from youtmdl.exceptions import ExtractError
+from youtmdl.utils.ytmusic import get_title_from_ytmusic
 from youtubesearchpython import VideosSearch
 from typing import List
-from ytmdl.utils.ytdl import ydl_opts_with_config
+from youtmdl.utils.ytdl import ydl_opts_with_config
 
 
 logger = Logger("yt")
