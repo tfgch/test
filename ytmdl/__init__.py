@@ -1,10 +1,10 @@
 # Import entry to make it accessible
-from ytmdl.main import entry
+from youtmdl.main import entry
 
-name = "ytmdl"
+name = "youtmdl"
 
 
-__all__ = ['ytmdl',
+__all__ = ['youtmdl',
            'defaults',
            'dir',
            'prepend',
