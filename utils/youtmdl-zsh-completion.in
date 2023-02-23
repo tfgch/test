@@ -1,11 +1,11 @@
-#compdef ytmdl
+#compdef youtmdl
 
-__ytmdl() {
+__youtmdl() {
     local curcontext="$curcontext" cur_word
     typeset -A opt_args
 
     cur_word=$words[CURRENT]
-    type_list="{{ytmdl_opts}}"
+    type_list="{{youtmdl_opts}}"
 
     # Only perform completion if the current word starts with a dash ('-'),
     # meaning that the user is trying to complete an option.
@@ -19,4 +19,4 @@ __ytmdl() {
     return 0
 }
 
-__ytmdl
+__youtmdl
