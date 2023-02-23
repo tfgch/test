@@ -2,6 +2,6 @@ __pycache__
 .eggs/
 build/
 dist/
-ytmdl.*
-ytmdl/__pycache__/*
+youtmdl.*
+youtmdl/__pycache__/*
 .cache
