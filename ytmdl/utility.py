@@ -2,7 +2,7 @@
 
 import subprocess
 from os import remove, path, popen
-from ytmdl import defaults, prepend
+from youtmdl import defaults, prepend
 from shutil import which
 import ffmpeg
 from simber import Logger
