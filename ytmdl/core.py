@@ -1,10 +1,10 @@
-"""Contain all the core functions for ytmdl"""
+"""Contain all the core functions for youtmdl"""
 
 from typing import Union
 from simber import Logger
 from colorama import Fore, Style
 
-from ytmdl import (
+from youtmdl import (
     yt,
     song,
     stringutils,
@@ -13,7 +13,7 @@ from ytmdl import (
     manual,
     metadata
 )
-from ytmdl.exceptions import (
+from youtmdl.exceptions import (
     DownloadError, ConvertError, NoMetaError, MetadataError
 )
 
