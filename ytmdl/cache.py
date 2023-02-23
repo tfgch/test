@@ -7,12 +7,12 @@
 
 from glob import glob
 import os
-from ytmdl.stringutils import (
+from youtmdl.stringutils import (
     remove_multiple_spaces, remove_punct, compute_jaccard, remove_stopwords,
     check_keywords
 )
-from ytmdl.defaults import DEFAULT
-from ytmdl.prepend import PREPEND
+from youtmdl.defaults import DEFAULT
+from youtmdl.prepend import PREPEND
 from simber import Logger
 from colorama import Fore, Style
 
