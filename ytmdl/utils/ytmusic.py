@@ -5,7 +5,7 @@ Handle all the util functions for working with YouTube Music.
 from ytmusicapi import YTMusic
 from simber import Logger
 
-from ytmdl.exceptions import ExtractError
+from youtmdl.exceptions import ExtractError
 
 
 # Create logger
