@@ -7,7 +7,7 @@ from xdg.BaseDirectory import xdg_config_home
 
 
 config_text = '''#*****************************************#
-#*-------------config for ytmdl-----------#
+#*-------------config for youtmdl-----------#
 #
 #-----------------------------------------#
 #------PLEASE DON\'T LEAVE ANY BLANK LINES---#
