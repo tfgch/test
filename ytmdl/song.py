@@ -24,9 +24,9 @@ import requests
 import os
 from rich.prompt import IntPrompt
 
-from ytmdl import prepend, defaults
+from youtmdl import prepend, defaults
 from simber import Logger
-from ytmdl.meta import preconfig
+from youtmdl.meta import preconfig
 # import traceback
 
 logger = Logger("song")
