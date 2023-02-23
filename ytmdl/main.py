@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    * ytmdl.py - A script to download songs.
+    * youtmdl.py - A script to download songs.
 
 ----------------------------------------------------
      A simple script to download songs in mp3 format
@@ -19,7 +19,7 @@ import argparse
 from xdg.BaseDirectory import xdg_cache_home
 from os import path
 from simber import Logger
-from ytmdl import (
+from youtmdl import (
     dir,
     yt,
     defaults,
@@ -27,21 +27,21 @@ from ytmdl import (
     cache,
     utility,
 )
-from ytmdl.exceptions import (
+from youtmdl.exceptions import (
     DownloadError, ConvertError, NoMetaError, MetadataError,
     ExtractError
 )
-from ytmdl.core import (
+from youtmdl.core import (
     search, download, convert, trim, meta
 )
-from ytmdl.utils.archive import (
+from youtmdl.utils.archive import (
     open_archive_stream,
     is_present_in_archive,
     add_song_to_archive
 )
-from ytmdl.utils.ytdl import is_ytdl_config_present
-from ytmdl.yt import is_yt_url
-from ytmdl.__version__ import __version__
+from youtmdl.utils.ytdl import is_ytdl_config_present
+from youtmdl.yt import is_yt_url
+from youtmdl.__version__ import __version__
 from typing import Tuple
 
 # init colorama for windows
@@ -49,8 +49,8 @@ init()
 
 LOGGER_OUTTEMPLATE = " %a{}==>{}%".format(Style.BRIGHT, Style.RESET_ALL)
 LOGGER_FILEFORMAT = "[{logger}]:[{time}]: "
-logger = Logger('ytmdl',
-                log_path=path.join(xdg_cache_home, 'ytmdl/logs/log.cat'),
+logger = Logger('youtmdl',
+                log_path=path.join(xdg_cache_home, 'youtmdl/logs/log.cat'),
                 format=LOGGER_OUTTEMPLATE,
                 file_format=LOGGER_FILEFORMAT,
                 update_all=True
