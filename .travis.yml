@@ -4,4 +4,4 @@ python:
 
 cache: pip
 script:
-  - pip install ytmdl
+  - pip install youtmdl
